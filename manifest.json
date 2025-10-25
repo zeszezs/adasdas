@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy Spoofer",
+  "version": "1.0",
+  "description": "Protects privacy by spoofing browser fingerprinting methods like canvas, WebGL, audio, screen resolution, and more.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": []
+}
